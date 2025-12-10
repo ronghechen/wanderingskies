@@ -1,0 +1,50 @@
+<!-- Last edited by Dietrich Geisler 2025 -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Wandering Skies</title>
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    </head>
+<body onload="main()">
+    <!-- WebGL Utility Scripts -->
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils-cs351.js"></script>
+    <script src="lib/cuon-algebra-cs351.js"></script>
+
+    <!-- Load our terrain class definitions -->
+    <script src="terrain.js"></script>
+
+    <!-- Select a JavaScript file -->
+    <script src="terrain_demo.js"></script>
+
+    <!-- Setup the Canvas -->
+    <div class="layout">
+        <div class="scene-wrapper">
+          <canvas id="webgl-canvas"></canvas>
+        </div>
+      
+        <div class="instructions">
+            <h2>Wandering Skies</h2>
+          <p>Controls for camera movement: WASD forward/backward/left/right, R to go up, and F to go down</p>
+          <p>Press 1 for daytime (default), 2 for sunset, and 3 for night</p>
+          <ul>
+            <li>W - move forward</li>
+            <li>A - move left</li>
+            <li>S - move backward</li>
+            <li>D - move right</li>
+            <li>R - go up</li>
+            <li>F - go down</li>
+            <li>Up arrow - tilt camera up</li>
+            <li>Down arrow - tilt camera down</li>
+            <li>T - Toggle between Toon (purple tint) and Phong shading</li>
+          </ul>
+        </div>
+      </div>      
+</body>
+
+</html>

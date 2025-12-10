@@ -1,0 +1,61 @@
+/* Centers the scene on the page */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;                
+    justify-content: center;       
+    align-items: center;      
+    margin: 0;
+    background-image: url('bg.png');
+    background-position: center center; 
+    background-repeat: no-repeat;       
+    background-size: cover; 
+    font-family: "Nunito", sans-serif;
+    color: rgb(140, 120, 156);
+}
+
+p {
+    color: rgb(140, 120, 156);
+}
+
+h2 {
+    color: rgb(140, 120, 156);
+}
+
+  /* Rounded-square container */
+  .scene-wrapper {
+    width: 600px;            /* adjust as needed */
+    height: 600px;           /* same as width → square */
+    border-radius: 22%;      /* matches your reference image */
+    overflow: hidden;        /* clip the canvas corners */
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    background: #ddd;        /* fallback while canvas loads */
+    position: relative;
+  }
+  
+  /* Make the canvas fill the rounded container */
+  #webgl-canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  
+  .layout {
+    display: flex;
+    align-items: center;   /* vertically align text with the frame */
+    gap: 48px;             /* space between frame and text */
+  }
+
+  .instructions {
+    max-width: 500px;
+    align-content: center;
+  }
+  
+  .instructions p {
+    margin: 0;
+    color: rgb(140, 120, 156);  /* keeps your existing p color */
+    font-size: 16px;
+    line-height: 1.5;
+  }
