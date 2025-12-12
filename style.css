@@ -1,4 +1,3 @@
-/* Centers the scene on the page */
 html, body {
     height: 100%;
 }
@@ -24,18 +23,16 @@ h2 {
     color: rgb(140, 120, 156);
 }
 
-  /* Rounded-square container */
   .scene-wrapper {
-    width: 600px;            /* adjust as needed */
-    height: 600px;           /* same as width → square */
-    border-radius: 22%;      /* matches your reference image */
-    overflow: hidden;        /* clip the canvas corners */
+    width: 600px;            
+    height: 600px;           
+    border-radius: 22%;      
+    overflow: hidden;        
     box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-    background: #ddd;        /* fallback while canvas loads */
+    background: #ddd;        
     position: relative;
   }
   
-  /* Make the canvas fill the rounded container */
   #webgl-canvas {
     width: 100%;
     height: 100%;
@@ -44,8 +41,8 @@ h2 {
   
   .layout {
     display: flex;
-    align-items: center;   /* vertically align text with the frame */
-    gap: 48px;             /* space between frame and text */
+    align-items: center;   
+    gap: 48px;             
   }
 
   .instructions {
@@ -55,7 +52,7 @@ h2 {
   
   .instructions p {
     margin: 0;
-    color: rgb(140, 120, 156);  /* keeps your existing p color */
+    color: rgb(140, 120, 156);  
     font-size: 16px;
     line-height: 1.5;
   }
